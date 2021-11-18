@@ -1,6 +1,22 @@
-import React ,{useState}from 'react'  // Loading the react library 
+import React ,{useState,useEffect}from 'react'  // Loading the react library 
+import axios from "axios";
+
+
 
 function Counter() {
+
+useEffect(() => {
+    axios({
+        method: 'post',
+        url: 'http://localhost:8080/api/postData',
+        data: {
+          firstName: 'Finn',
+          lastName: 'Williams'
+        }
+      });
+  
+   
+}, [])
     const [state,setState]=useState(0);
 
 function increment(){
