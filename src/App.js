@@ -1,11 +1,13 @@
 import './App.css';
 import Api from './components/Api';
+import Register from './components/Register';
 
 function App() {
   return (
     <div className="App">
 
-    <Api/>
+
+<Register/>
      
     </div>
   );
